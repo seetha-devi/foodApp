@@ -8,6 +8,7 @@ import Contact from './Pages/Contact';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import LoginSection from './Components/LoginSection/LoginSection';
+import Cart from './Components/Cart/Cart';
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/' exact element={<Home />} />
         {/* <Route path ="*" element={<PageNotFound />} /> */}
         <Route path="/contact" element={<Contact />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
       
     </div>

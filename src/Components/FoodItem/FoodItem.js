@@ -8,41 +8,39 @@ export const FoodItem = ({ id, name, description, price, image }) => {
   const dispatch = useDispatch();
   const items = useSelector(selectCartItems);
 
-  const handleUpdate = (id) => {
-    dispatch(addToCart({ id }));
+  const handleAddToCart = () => {
+    dispatch(addToCart({ id, name, description, price, image }));
   };
 
-  const handleRemove = (id) => {
+  const handleRemoveFromCart = () => {
     dispatch(removeFromCart({ id }));
   };
 
   const item = items.find(item => item.id === id);
 
-
   return (
     <div className='food-item'>
       <div className='food-img-container'>
-        <img src={image} alt='' className='food-item-image' />
+        <img src={image} alt={name} className='food-item-image' />
         {!item ? (
           <img
             src={assets.add_icon_white}
-            alt=''
+            alt='Add'
             className='add'
-            onClick={() => handleUpdate(id)}
+            onClick={handleAddToCart}
           />
         ) : (
           <div className='food-item-counter'>
             <img
               src={assets.remove_icon_red}
-              alt=''
-              onClick={() => handleRemove(id)}
+              alt='Remove'
+              onClick={handleRemoveFromCart}
             />
             <p>{item.quantity}</p>
-            {console.log("total:", item)}
             <img
               src={assets.add_icon_green}
-              alt=''
-              onClick={() => handleUpdate(id)}
+              alt='Add'
+              onClick={handleAddToCart}
             />
           </div>
         )}
@@ -50,10 +48,10 @@ export const FoodItem = ({ id, name, description, price, image }) => {
       <div className='food-item-info'>
         <div className='food-item-name-rating'>
           <p>{name}</p>
-          <img src={assets.rating_starts} alt='' />
+          <img src={assets.rating_starts} alt='Rating' />
         </div>
         <p className='food-item-desc'>{description}</p>
-        <p className='food-item-price'>${price}</p>
+        <p className='food-item-price'>${price.toFixed(2)}</p>
       </div>
     </div>
   );
