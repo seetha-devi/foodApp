@@ -1,11 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart, selectCartItems } from '../../Features/Cart/CartSlice';
+import { removeFromCart, selectCartItems,selectCartTotal } from '../../Features/Cart/CartSlice';
 import '../Cart/Cart.css'
 
 const Cart = () => {
   const dispatch = useDispatch();
   const items = useSelector(selectCartItems);
+  const total = useSelector(selectCartTotal);
 
   const handleRemoveFromCart = (id) => {
     dispatch(removeFromCart({ id }));
@@ -39,7 +40,7 @@ const Cart = () => {
             </div>
           ))
         ) : (
-          <p>Your cart is empty</p>
+          <p className='empty-cart'>Your cart is empty</p>
         )}
       </div>
       <div className='cart-bottom'>
@@ -48,17 +49,17 @@ const Cart = () => {
                 <div>
                     <div className='cart-total-details'>
                         <p>Subtotal</p>
-                         <p>{0}</p>
+                         <p>{total}</p>
                     </div>
                     <hr/>
                     <div className='cart-total-details'>
                         <p>Delivery Fee</p>
-                         <p>{2}</p>
+                         <p>{30}</p>
                     </div>
                     <hr/>
                     <div className='cart-total-details'>
                         <b>Total</b>
-                         <p>{0}</p>
+                         <p>{`${total + 30}`}</p>
                     </div>
                    
                 </div>

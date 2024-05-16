@@ -52,6 +52,8 @@ import profile_icon from '../frontend_assets/profile_icon.png'
 import bag_icon from '../frontend_assets/bag_icon.png'
 import logout_icon from '../frontend_assets/logout_icon.png'
 import parcel_icon from '../frontend_assets/parcel_icon.png'
+import old from '../../src/assets/old.jpg'
+import images from '../../src/assets/images.png'
 
 export const assets = {
     logo,
@@ -72,7 +74,9 @@ export const assets = {
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    old,
+    images
 }
 
 

@@ -9,6 +9,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import LoginSection from './Components/LoginSection/LoginSection';
 import Cart from './Components/Cart/Cart';
+import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         {/* <Route path ="*" element={<PageNotFound />} /> */}
         <Route path="/contact" element={<Contact />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/placeorder' element={<PlaceOrder />} />
       </Routes>
       
     </div>

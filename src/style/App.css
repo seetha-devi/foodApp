@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
-
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Radio Canada Big", sans-serif;
+  font-family: "Outfit", sans-serif;
   scroll-behavior: smooth;
 }
 

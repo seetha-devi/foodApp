@@ -57,7 +57,9 @@
     top: -8px;
     right: -8px;
     background-color: tomato;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding:0px 8px;
+    color: white;
 }
 
 @media (max-width:1050px){
