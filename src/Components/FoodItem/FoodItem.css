@@ -4,6 +4,7 @@
     border-radius: 15px;
     box-shadow: 0px 0px 10px #00000015;
     animation: fadeIn 5s;
+    
 }
 .food-item-image{
     width: 100%;
@@ -30,6 +31,7 @@
     color: #646464;
 }
 .food-item-price{
+    margin-top: 5px;
     font-size: 22px;
     color: tomato;
 }

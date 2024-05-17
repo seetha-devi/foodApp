@@ -12,7 +12,7 @@ const Navbar = ({setShowLogin, showLogin}) => {
     const item = useSelector(selectCartItems);
   return (
      <div className='navbar'>
-        <Link to='/'><img src={assets.logo} alt='logo' className='logo'/></Link>
+        <Link to='/'><img src={assets.berry} alt='logo' className='logo'/></Link>
         <ul className='navbar-menu'>
            <Link to='/'><li onClick={() => setMenu('home')} className={menu ==='home'? 'active' : ''}>Home</li></Link>
            <a href='#menu'><li onClick={() => setMenu('menu')} className={menu ==='menu'? 'active' : ''}>Menu</li></a>

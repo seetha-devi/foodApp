@@ -15,6 +15,7 @@
     gap: 30px;
     list-style-type: none;
     font-size: 18px;
+    color: #49557e;
 }
 
 .navbar-right {
@@ -31,7 +32,7 @@
     background-color: transparent;
     font-size: 16px;
     color: #49557e;
-    border: 1px solid tomato;
+    border: 2px solid purple;
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
@@ -45,7 +46,7 @@
 .navbar-menu li.active {
     padding-bottom: 1px; /* Adjust as needed */
     margin-bottom: -4px;
-    border-bottom: 2px solid #49557e;
+    border-bottom: 2px solid purple;
 }
 .navbar-search-icon{
     position: relative;
@@ -56,7 +57,7 @@
     min-height: 10px;
     top: -8px;
     right: -8px;
-    background-color: tomato;
+    background-color: purple;
     border-radius: 10px;
     padding:0px 8px;
     color: white;

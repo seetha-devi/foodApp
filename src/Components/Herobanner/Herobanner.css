@@ -1,10 +1,11 @@
 .hero-banner{
-    background-image: url('/src/frontend_assets/header_img.png');
+    background-image: url('/src/frontend_assets/banner.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 34vw;
     margin: 30px auto;
     position: relative;
+  
 }
 .hero-banner-content{
     position: absolute;

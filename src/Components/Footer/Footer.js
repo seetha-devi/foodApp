@@ -9,10 +9,10 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className='footer-content'>
             <div className='footer-content-left'>
-                <img src={assets.logo} alt='logo' />
+                <img src={assets.berrys} alt='logo' />
                 <p>Whether you're joining us for a casual meal, a special celebration, or one of our cooking classes, we welcome you to our family. Our friendly staff is here to ensure that your time with us is memorable and enjoyable.</p>
                 <div className='footer-social-icon'>
-                    <img src={assets.facebook_icon} alt='facebook'/>
+                    <img src={assets.facebook_icon} alt='facebook' className='colored-icon' />
                     <img src={assets.twitter_icon} alt='twitter'/>
                     <img src={assets.linkedin_icon} alt='linkedin' />
                 </div>
